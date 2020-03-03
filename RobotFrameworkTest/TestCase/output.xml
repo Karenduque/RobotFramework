@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20200303 15:48:56.613" generator="Robot 3.1.2 (Python 2.7.16 on win32)">
+<suite source="D:\QA\RobotFramework\TestCase\TC2.robot" id="s1" name="TC2">
+<test id="s1-t1" name="Buscar nombre de google">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://www.google.com</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200303 15:48:56.881" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
+<status status="PASS" endtime="20200303 15:49:04.937" starttime="20200303 15:48:56.881"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:q</arg>
+<arg>cucumber</arg>
+</arguments>
+<msg timestamp="20200303 15:49:04.938" level="INFO">Typing text 'cucumber' into text field 'name:q'.</msg>
+<status status="PASS" endtime="20200303 15:49:05.086" starttime="20200303 15:49:04.938"></status>
+</kw>
+<kw name="Execute Javascript" library="Selenium2Library">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>document.querySelector('.gNO89b').click()</arg>
+</arguments>
+<msg timestamp="20200303 15:49:05.088" level="INFO">Executing JavaScript:
+document.querySelector('.gNO89b').click()
+Without any arguments.</msg>
+<status status="PASS" endtime="20200303 15:49:07.931" starttime="20200303 15:49:05.087"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>cucumber</arg>
+</arguments>
+<status status="PASS" endtime="20200303 15:49:07.980" starttime="20200303 15:49:07.932"></status>
+</kw>
+<kw name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20200303 15:49:10.351" starttime="20200303 15:49:07.981"></status>
+</kw>
+<status status="PASS" endtime="20200303 15:49:10.352" critical="yes" starttime="20200303 15:48:56.880"></status>
+</test>
+<status status="PASS" endtime="20200303 15:49:10.548" starttime="20200303 15:48:56.615"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="TC2" pass="1">TC2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
